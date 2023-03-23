@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tik-tak-toe</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to top right, gold, springgreen, cornflowerblue, palevioletred, lightcoral);
+        }
+        .board {
+            box-shadow: 0 0 5px 0 #0008, 0 0 15px 0 #0008;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: 10px;
+            border-radius: 6px;
+            backdrop-filter: blur(4px);
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            background-color: #fff5;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font: 40px monospace;
+            color: dimgray;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .cell:hover {
+            background-color: #fff9;
+        }
+        .cell.x {
+            background-image: url("https://i.pinimg.com/originals/38/b4/b2/38b4b2defcf25b5046cc4126cd5a9641.png");
+        }
+        .cell.o {
+            background-image: url("https://images6.fanpop.com/image/photos/39500000/Trixie-my-little-pony-friendship-is-magic-39565187-1190-1111.png");
+            transform: scale(-1, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="board"></div>
+    <script src="script.js"></script>
+</body>
+</html>
